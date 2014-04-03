@@ -1,0 +1,17 @@
+<?php
+/**
+ * @file nyc_picture_demo.install
+ * 
+ * @author Shawn P. Duncan <shawn@c3design.org>
+ * @date   4/3/14,  4:37 PM
+ *
+ * @brief 
+ */
+
+/*
+ * This module needs to run after civi since it modifies civi views data declarations.
+ */
+function nyc_picture_demo_install() {
+  $weight = db_query("SELECT weight FROM {system} WHERE name = 'civicrm'")->fetchField();
+  db_query("UPDATE {system} SET weight = :weight WHERE name = 'nyc_picture_demo'", array(':weight' => $weight + 1));
+}
