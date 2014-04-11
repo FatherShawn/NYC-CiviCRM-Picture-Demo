@@ -5,7 +5,14 @@
  * @author Shawn P. Duncan <sduncan@dioceseli.org>
  * @date   1/26/14,  10:13 AM
  *
- * @brief
+ *
+ * Copyright 2014 by Shawn P. Duncan.  This code is
+ * released under the GNU General Public License.
+ * Which means that it is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
  */
 
 class nyc_picture_demo_handler_field_image_url extends views_handler_field {
